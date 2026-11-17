@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusPulse | College Event Management</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header class="navbar">
+    <div class="container nav-content">
+        <a href="#" class="logo">Campus<span>Pulse</span></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#events">Events</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#register" class="btn-nav">Register Now</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container hero-content">
+        <h1>Annual College Fest 2026</h1>
+        <p>Discover workshops, hackathons, cultural nights, and guest lectures happening across campus.</p>
+        <div class="hero-buttons">
+            <a href="#events" class="btn btn-primary">Explore Events</a>
+            <a href="#register" class="btn btn-outline">Student Registration</a>
+        </div>
+    </div>
+</section>
+
+<!-- Upcoming Events Section -->
+<section id="events" class="section">
+    <div class="container">
+        <h2 class="section-title">Upcoming Events</h2>
+        <p class="section-subtitle">Choose from technical competitions, creative showcases, and hands-on sessions.</p>
+
+        <div class="events-grid">
+            <!-- Event Card 1 -->
+            <article class="event-card">
+                <div class="card-header">
+                    <span class="badge badge-tech">Technical</span>
+                    <span class="event-date">Nov 24, 2026</span>
+                </div>
+                <h3>CodeSprint 24-Hour Hackathon</h3>
+                <p>Build innovative software solutions in teams of up to four and compete for campus prizes.</p>
+                <div class="card-footer">
+                    <span>📍 Main Auditorium</span>
+                    <a href="#register" class="card-link">Register &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Event Card 2 -->
+            <article class="event-card">
+                <div class="card-header">
+                    <span class="badge badge-cultural">Cultural</span>
+                    <span class="event-date">Nov 25, 2026</span>
+                </div>
+                <h3>Rhythm & Beats Night</h3>
+                <p>An evening of live student bands, solo dance performances, and acoustic open-mic sessions.</p>
+                <div class="card-footer">
+                    <span>📍 Open Air Theatre</span>
+                    <a href="#register" class="card-link">Register &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Event Card 3 -->
+            <article class="event-card">
+                <div class="card-header">
+                    <span class="badge badge-workshop">Workshop</span>
+                    <span class="event-date">Nov 26, 2026</span>
+                </div>
+                <h3>UI/UX & Product Design Bootcamp</h3>
+                <p>Learn wireframing, prototyping, and user research fundamentals with industry mentors.</p>
+                <div class="card-footer">
+                    <span>📍 Seminar Hall B</span>
+                    <a href="#register" class="card-link">Register &rarr;</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Event Schedule Section -->
+<section id="schedule" class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Event Schedule</h2>
+        <p class="section-subtitle">Plan your day with exact timings and venue details.</p>
+
+        <div class="table-wrapper">
+            <table class="schedule-table">
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Event Name</th>
+                    <th>Category</th>
+                    <th>Venue</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Nov 24, 2026</td>
+                    <td>09:30 AM</td>
+                    <td>Opening Ceremony & Keynote</td>
+                    <td>General</td>
+                    <td>Main Auditorium</td>
+                </tr>
+                <tr>
+                    <td>Nov 24, 2026</td>
+                    <td>11:00 AM</td>
+                    <td>CodeSprint Hackathon Kickoff</td>
+                    <td>Technical</td>
+                    <td>Computer Lab Block</td>
+                </tr>
+                <tr>
+                    <td>Nov 25, 2026</td>
+                    <td>06:00 PM</td>
+                    <td>Rhythm & Beats Cultural Night</td>
+                    <td>Cultural</td>
+                    <td>Open Air Theatre</td>
+                </tr>
+                <tr>
+                    <td>Nov 26, 2026</td>
+                    <td>02:00 PM</td>
+                    <td>UI/UX Design Bootcamp</td>
+                    <td>Workshop</td>
+                    <td>Seminar Hall B</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Registration Form Section -->
+<section id="register" class="section">
+    <div class="container">
+        <div class="form-container">
+            <h2 class="section-title">Event Registration</h2>
+            <p class="section-subtitle">Fill out your college details below to reserve your spot.</p>
+
+            <form action="#" method="POST" class="reg-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="e.g., Ananya Sharma" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="rollno">College Roll Number</label>
+                        <input type="text" id="rollno" name="rollno" placeholder="e.g., 24CS104" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Department</label>
+                        <select id="department" name="department" required>
+                            <option value="">Select Department</option>
+                            <option value="cse">Computer Science</option>
+                            <option value="ece">Electronics & Comm.</option>
+                            <option value="mech">Mechanical Engineering</option>
+                            <option value="mgmt">Business & Management</option>
+                            <option value="arts">Arts & Humanities</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">College Email</label>
+                        <input type="email" id="email" name="email" placeholder="name@college.edu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event">Select Event</label>
+                        <select id="event" name="event" required>
+                            <option value="">Choose an Event</option>
+                            <option value="hackathon">CodeSprint 24-Hour Hackathon</option>
+                            <option value="cultural">Rhythm & Beats Night</option>
+                            <option value="workshop">UI/UX & Product Design Bootcamp</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Complete Registration</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer-content">
+        <p>&copy; 2026 CampusPulse Event Committee. All rights reserved.</p>
+        <p>Contact: events@college.edu | Student Activity Center</p>
+    </div>
+</footer>
+
+</body>
+</html>
